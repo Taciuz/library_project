@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -5,6 +7,58 @@
 }
 
 #myModal{
-    /* display: none; */
+    display: none;
 }
 
+.formModal{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    border: 1px solid grey;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    transform: translate(-50%, -50%);
+}
+
+.formModal label{
+    font-size: 1.3rem;
+    font-weight: 700;
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 0.8rem;
+}
+
+.formModal input{
+    font-size: 1.3rem;
+    font-weight: 700;
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 0.8rem;
+}
+
+.addBookBtn{
+    width: 50%;
+    margin: auto;
+    font-size: 1.3rem;
+    padding: 0.4rem;
+    font-weight: 600;
+}
+
+#libraryBook{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.bookCard{
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 1rem;
+    padding: 0.8rem;
+    font-size: 1.3rem;
+    font-family: "Roboto", sans-serif;
+}

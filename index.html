@@ -12,30 +12,31 @@
     <div class="navbar">
         <ul>
             <li class="listItem"><img src="images/logo.png" alt="" class="logo"></li>
-            <li class="listItem"><button class="btn" id="addBook">Test</button></li>
+            <li class="listItem"><button class="btn openModalBtn" id="addBook">+ Add book</button></li>
         </ul>
     </div>
 
     <div class="addBookModal" id="myModal">
-        <form action="" id="formSubmit">
-            <label for="title">Title</label>
-            <input type="text" name="title" id="title">
+        <div class="containerModal">
+            <form action="" id="formSubmit" class="formModal">
+                <label for="title">Title</label>
+                <input type="text" name="title" id="title" placeholder="Title">
 
-            <label for="author">Author</label>
-            <input type="text" name="author" id="author">
+                <label for="author">Author</label>
+                <input type="text" name="author" id="author" placeholder="Author">
 
-            <label for="pages">N. Pages</label>
-            <input type="number" name="pages" id="pages">
+                <label for="pages">N. Pages</label>
+                <input type="number" name="pages" id="pages" placeholder="N. of Pages">
 
-            <label for="isRead">Have you read it?</label>
-            <input type="checkbox" name="isRead" id="isRead">
+                <label for="isRead">Have you read it?</label>
+                <input type="checkbox" name="isRead" id="isRead">
 
-            <button class="addBookBtn" type="submit">Add book</button>
-        </form>
+                <button class="addBookBtn" type="submit">Add book</button>
+            </form>
+        </div>
     </div>
 
-    <div class="libraryBook">
-    </div>
+    <div id="libraryBook"></div>
 
     <script src="app.js"></script>
 </body>
